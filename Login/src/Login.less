@@ -1,0 +1,66 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/config.less';
+
+.container {
+  width: 420px;
+  margin: 40px auto;
+  position: relative;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  :global{
+    .ant-form-item:nth-child(2){
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .form__item{
+    border:1px solid @FEBorder;
+    background-color: @FEWhite;
+    padding: 30px;
+    box-shadow:0 0 10px 0 @FEBoxShadow;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height:265px;
+  }
+
+  input{
+    background: @layout-body-background;
+  }
+
+  .submit{
+    border:1px solid @FEBorder;
+    background-color: @FEWhite;
+    box-shadow: 0 0 10px 0 @FEBoxShadow;
+    position: absolute;
+    z-index: 0;
+    width: 104%;
+    margin-left: -2%;
+    margin-top: 70px;
+    padding-top: 140px;
+  }
+
+  .bottom__tip{
+    position:absolute;
+    bottom: -40px;
+    left:0;
+    background-color: @FERedBg;
+    text-align: right;
+    width: 100%;
+    color: @FERedTxt;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 40px;
+    font-size: 16px;
+    box-shadow: 0 0 10px 0 @FEBoxShadow;
+  }
+
+  .login__btn{
+    background-color: @FEWhite;
+    color: @FERedBg;
+  }
+
+}
