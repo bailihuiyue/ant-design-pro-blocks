@@ -1,15 +1,26 @@
 {
-    name: '@umi-blocks/demo',
-    description: '区块描述',
-    // ... 更多其他 npm 包的相关定义
-    dependencies: {
-      // dependencies 里面是区块运行时阶段的依赖，比如 antd g2 这些包的依赖
-      antd: '^3.0.0',
-    },
-    devDependencies: {
-      // 用户调试区块时候的依赖，和区块没有直接关系，可以提供基于 umi 的开发方案
-    },
-    scripts: {
-      // 开发区块调试时的命令，和区块没有直接关系
-    }
+  "name": "@umi-block/newblock",
+  "version": "0.0.5",
+  "description": "newblock module",
+  "main": "src/index.tsx",
+  "authors": {
+    "name": "Ones/balihuiyue",
+    "email": "964981348@qq.com"
+  },
+  "repository": "/newblock",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "dependencies": {
+    "react": ">=16.0.0"
+  },
+  "devDependencies": {
+    "umi": "^2.0.0",
+    "umi-plugin-block-dev": "^2.0.0",
+    "umi-types": "^0.3.0"
+  },
+  "blockConfig": {
+    "specVersion": "0.1"
+  },
+  "license": "MIT"
 }
