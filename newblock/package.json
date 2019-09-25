@@ -1,0 +1,15 @@
+{
+    name: '@umi-blocks/demo',
+    description: '区块描述',
+    // ... 更多其他 npm 包的相关定义
+    dependencies: {
+      // dependencies 里面是区块运行时阶段的依赖，比如 antd g2 这些包的依赖
+      antd: '^3.0.0',
+    },
+    devDependencies: {
+      // 用户调试区块时候的依赖，和区块没有直接关系，可以提供基于 umi 的开发方案
+    },
+    scripts: {
+      // 开发区块调试时的命令，和区块没有直接关系
+    }
+}
